@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Developer Skills & Editor Setup</title>
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a300445d5b.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <div class="overlay">
+        <div class="gameOver">
+            <h3>Game Over!!!</h3>
+            <!-- <h4>You Lost</h4> -->
+            <div class="hearts">
+                <i class="fa-solid fa-heart-crack fa-fade" style="color: #e50b0b; font-size: 50px;"></i>
+                <i class="fa-solid fa-heart-crack fa-fade" style="color: #e50b0b; font-size: 50px;"></i>
+                <i class="fa-solid fa-heart-crack fa-fade" style="color: #e50b0b; font-size: 50px;"></i>
+            </div>
+            <button class="tryAgain">Try Again</button>
+            
+
+        </div>
+    </div>
+    <div class="center-box" id="result-box">
+        <span id="result-text"></span>
+        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" viewBox="0 0 552.855 552.855" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M511.9,157.425c-3.408-25.845-17.057-53.513-40-76.463c-22.943-22.944-50.605-36.585-76.445-39.994 c-11.695-1.542-27.307-8.005-36.664-15.184C338.1,9.915,308.889,0,276.434,0s-61.665,9.915-82.351,25.784 c-9.357,7.179-24.97,13.642-36.665,15.184c-25.845,3.409-53.501,17.05-76.445,39.994c-22.944,22.95-36.592,50.619-40,76.463 c-1.536,11.695-8.005,27.295-15.178,36.653c-15.875,20.686-25.79,49.896-25.79,82.35c0,32.455,9.915,61.666,25.784,82.352 c7.179,9.357,13.642,24.963,15.178,36.652c3.409,25.844,17.056,53.514,40,76.463c22.944,22.943,50.606,36.586,76.445,39.994 c11.695,1.543,27.308,8.006,36.665,15.184c20.686,15.869,49.896,25.783,82.351,25.783c32.455,0,61.666-9.914,82.352-25.783 c9.357-7.178,24.969-13.641,36.664-15.184c25.846-3.408,53.502-17.051,76.445-39.994c22.943-22.949,36.592-50.619,40-76.463 c1.537-11.695,8.006-27.295,15.178-36.652c15.869-20.686,25.783-49.896,25.783-82.352c0-32.454-9.914-61.665-25.783-82.35 C519.9,184.72,513.438,169.12,511.9,157.425z M309.525,433.191c0,6.764-5.484,12.24-12.24,12.24h-39.652 c-6.756,0-12.24-5.477-12.24-12.24v-39.65c0-6.764,5.483-12.24,12.24-12.24h39.652c6.756,0,12.24,5.477,12.24,12.24V433.191z M384.502,243.674c-7.994,12.632-25.068,29.823-51.238,51.58c-13.543,11.26-21.951,20.312-25.221,27.16 c-2.447,5.135-3.904,13.305-4.344,24.51c-0.264,6.758-5.588,12.234-12.352,12.234h-33.72c-6.757,0-12.301-3.428-12.369-7.65 c-0.061-3.916-0.098-6.463-0.098-7.643c0-18.869,3.122-34.389,9.357-46.562c6.243-12.172,18.715-25.862,37.429-41.083 c18.717-15.214,29.896-25.184,33.545-29.896c5.631-7.454,8.445-15.673,8.445-24.651c0-12.479-4.975-23.164-14.945-32.069 c-9.969-8.904-23.391-13.354-40.281-13.354c-11.604,0-21.842,2.356-30.741,7.068c-5.973,3.164-14.406,10.355-18.476,15.753 c-4.541,6.022-8.219,13.268-11.034,21.738c-2.136,6.414-8.636,11.138-15.349,10.306l-34.584-4.29 c-6.714-0.833-11.897-6.995-10.698-13.648c3.978-22.032,15.098-41.114,33.354-57.24c21.53-19.021,49.792-28.531,84.786-28.531 c36.824,0,66.107,9.626,87.865,28.874c21.756,19.248,32.639,41.653,32.639,67.216 C396.484,217.658,392.488,231.048,384.502,243.674z"></path> </g> </g> </g></svg>
+    </div>
+    <section class="title">
+        <div class="header">
+            <button id="again-btn" onclick="resetGame()">Again !</button>
+            <p class="range">Range : <span class="range-x">1</span> to <span class="range-y">10</span></p>
+        </div>
+        <div class="tiltle-name">
+            <h1>Guess My Number</h1>
+        </div>
+    </section>
+    <section class="content">
+        <div class="userInput">
+            <input type="number" min="1" max="10" id="userValue">
+            <button onclick="checkValue()" id="check-btn" >
+                <span id="check-txt">Check </span>
+                <svg width="40px" id="tick" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="#a0ff9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m1.75 9.75 2.5 2.5m3.5-4 2.5-2.5m-4.5 4 2.5 2.5 6-6.5"></path> </g></svg>
+            </button>
+        </div>
+        <div class="description">
+            <div class="description-title">Start Guessing...</div>
+            <div class="description-Content">
+                <!-- <div class="box"> -->
+                    <div class="score"><svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="30px" height="30px" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <g> <path d="M13,24c-0.6,0-1-0.4-1-1V11c0,0,0,0,0,0V1c0-0.4,0.2-0.7,0.5-0.9c0.3-0.2,0.7-0.2,1,0l9,5C22.8,5.3,23,5.6,23,6 s-0.2,0.7-0.5,0.9L14,11.6V23C14,23.6,13.6,24,13,24z"></path> </g> <path d="M16,16v5.4c1.3,0.4,2,1.1,2,1.6c0,0.8-1.9,2-5,2s-5-1.2-5-2s1.9-2,5-2c0.3,0,0.7,0,1,0v-5C6,16.5,0,19.9,0,24 c0,4.5,7,8,16,8s16-3.5,16-8S25,16,16,16z"></path> </g></svg>
+                        <h5>Score : <span id="score">10</span></h5></div>
+                    <div class="highscore"><svg fill="#ffffff" id="Icons-1" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 100 100" enable-background="new 0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M74.2,32.9L53.1,21.1c-2-1.1-4.4-1.1-6.4,0L25.6,33c-2,1.1-3.2,3.2-3.2,5.4v23.7c0.1,2.2,1.3,4.2,3.2,5.4 l21.1,11.9c2,1.1,4.4,1.1,6.4,0l21.1-11.9c2-1.1,3.2-3.2,3.1-5.4V38.3C77.3,36.1,76.1,34,74.2,32.9z M40.8,40.5v25 c0,1.2-0.9,2.1-2.1,2.2c-1.2,0-2.1-1-2.1-2.2c0,0,0,0,0,0v-25c-0.7-0.7-1.1-1.6-1.1-2.5c0-1.8,1.5-3.2,3.3-3.1s3.2,1.5,3.1,3.3 C41.9,39.1,41.5,39.9,40.8,40.5z M66.5,56.2c0,0.4-0.2,0.7-0.5,0.9c-8.3,4.6-12.9-2.8-20.5-0.4c-0.6,0.2-1.2-0.1-1.4-0.7 c0-0.1,0-0.2,0-0.3V41.5c0-0.4,0.3-0.8,0.7-1c7.9-3,12.5,4.8,20.9,0.3c0.3-0.1,0.6,0,0.7,0.2c0,0.1,0.1,0.2,0.1,0.3V56.2z"></path> </g></svg>
+                        <h5>highscore : <span id="highscore">00</span></h5></div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
